@@ -1,0 +1,29 @@
+<!-- ng-content pega tudo que está entre a tag de aberta e fechamento -->
+<!-- Para recuperar, deve-se utiliza-lo -->
+
+<mat-card class="my-card">
+    <mat-card-header>
+        <mat-card-title>
+            Homer Simpson
+        </mat-card-title>
+        <mat-card-subtitle>
+            Duff!
+        </mat-card-subtitle>
+    </mat-card-header>
+
+    <img mat-card-image src="https://upload.wikimedia.org/wikipedia/pt/e/e4/Waiting_for_Duffman.jpg"
+        alt="homer Simpson">
+
+    <mat-card-content>
+
+        <ng-content>
+
+        </ng-content>
+
+    </mat-card-content>
+
+    <mat-card-actions>
+        <button mat-button color="accent"> Like </button>
+        <button mat-button color="primary"> Shared </button>
+    </mat-card-actions>
+</mat-card>

@@ -1,0 +1,26 @@
+<div class="mx-auto w-75">
+    {{produtos | json}}
+
+ <table mat-table [dataSource]="produtos" style="width: 100%;">
+
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let produto"> {{produto.name}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="price">
+        <th mat-header-cell *matHeaderCellDef> price </th>
+        <td mat-cell *matCellDef="let produto"> {{produto.price}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="quantity">
+        <th mat-header-cell *matHeaderCellDef> quantity </th>
+        <td mat-cell *matCellDef="let produto"> {{produto.quantity}} </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="prodColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: prodColumns"></tr>
+
+</table>
+</div>

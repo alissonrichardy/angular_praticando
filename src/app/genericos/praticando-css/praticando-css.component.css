@@ -1,0 +1,64 @@
+.static{
+    /* Top e left não funcionam com static, static é default */
+    top: 100px;
+    left: 100px;
+    background-color: steelblue;
+}
+.fixed{
+    /* Fixo na página */
+    position: fixed;
+    bottom: 30px;
+    right: 0px;
+    background-color: tomato;
+}
+.relative1{
+    /* Sempre relativo ao elemento anterior */
+    position: relative;
+    left: 0px;
+    top: 5px;
+    background-color: seagreen;
+}
+
+.absolute1{
+    /* Fica absoluto e sobresai nos demais elementos */
+    position: absolute;
+    left: 350px;
+    top: 120px;
+    background-color: violet;
+}
+
+.relative2{
+    position: relative;
+    left: 250px;
+    top: 2000px;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+.absolute2{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+}
+
+.sticky{
+    /* quando desce a página, ele sempre fica visivel na tela */
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: #777;
+    top: 10px;
+}
+
+p{
+    padding-bottom: 2000px;
+}
+
+div{
+    font-size: 60px;
+    padding: 30px;
+    border: solid 5px #222;
+}

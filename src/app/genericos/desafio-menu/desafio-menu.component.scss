@@ -1,0 +1,207 @@
+.mySideBar{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: start;
+    justify-items: start;
+    flex-wrap: wrap;
+
+    img{
+        width: 150px;
+       
+    }
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: greenyellow;
+    border-radius: 0 10px 10px 0;
+
+    ul{padding: 0;}
+    li{
+        margin: 10px;
+        list-style-type: none;
+        border: solid 2px black;
+        border-radius: 20px;
+        text-align: center;
+        a{
+            text-decoration: none;
+            font-size: 1.2em;
+            color: black;
+        }
+    }
+
+    li:hover{
+        background-color: white;
+        border: solid 2px black;
+
+        a{
+            color: black;
+        }
+    }
+}
+
+.disable-menu{
+    display: none;
+}
+
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: start;
+    align-items: center;
+    
+    padding-left: 10px;
+    background-color: midnightblue;
+    width: 100%;
+    height: 80px;
+    border-radius: 0px 0px 10px 30px;
+ 
+}
+
+.menu-toggle{
+    display: none;
+    position: fixed;
+    right: 15px;
+    color: #eee;
+    border: solid 1px rgb(223, 62, 34);
+    background-color: rgb(223, 62, 34);
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+}
+
+.logo{
+    img{
+        max-height: 60px;
+    }
+}
+
+.menu{
+
+    ul{
+        list-style-type: none;
+        display: flex;
+    }
+    li{
+        border: solid midnightblue 10px;
+        background-color: midnightblue;
+        border-radius: 10px;
+        //margin: 10px;
+       a{
+           color: #FFF;
+           text-decoration: none;
+           font-size: 1.1em;
+           font-weight: bold;
+       }
+    }
+    li:hover{
+        
+        border: solid teal 10px;
+        background-color:  teal;
+        border-radius: 10px;
+        a{
+            color:wheat;
+        }
+    }
+}
+
+.autenticacao{
+   position: fixed;
+   right: 10px;
+    
+    a{
+        font-weight: bold;
+        text-decoration: none;
+        color: #FFF;
+        margin: 10px;
+    }
+
+    .destaque{
+        background-color:  rgb(223, 62, 34);
+        border-radius: 20px;
+        border: solid rgb(223, 62, 34) 13px;
+        height: 30px;
+        color: white;
+        
+    }
+    .destaque:hover{
+        background-color: red;
+        border-color: red;
+        color: white;
+    }
+  
+}
+
+
+@media screen and(max-width: 765px){
+    .menu{display: none;}
+    .autenticacao{display: none;}
+    .menu-toggle{display: block;}
+}
+
+@media screen and (min-width: 765px){
+    .menu-toggle{display: none;}
+    .mySideBar{display: none;}
+}
+
+
+
+
+
+
+
+
+
+
+
+//Documentacao
+
+// header{
+//     //background-color: black;
+//     display: flex;
+
+//     //DIRECAO
+//     // flex-direction: column;
+//    // flex-direction: row;
+//     //flex-wrap: wrap-reverse;
+//     //flex-wrap: nowrap;
+//     //abreviado de direction e wrap
+//     flex-flow: row wrap;
+
+//     //ALINHAMENTO DO CONTAINER
+//     //justify-content: flex-start;//padrao
+//     //justify-content: center;
+//     //justify-content: flex-end;
+//     //justify-content: space-around;
+//     //justify-content: space-between;
+
+//     //ALINHAMENTO DOS ITENS
+//     ///align-items: center;
+//     //align-items: flex-start;
+//     //align-items: flex-end;
+//     //align-items: stretch;
+//     //align-items: baseline;
+
+//     //ALINHAMENTO DO CONTEUDO
+//     //align-content: space-between;
+//    // align-content: space-around;
+//    //align-content: stretch; //padrao
+//    //align-content: center;
+//    //align-content: flex-start;
+//    //align-content: flex-end;
+
+//    //DEIXAR TUDO CENTRALIZADO
+//    justify-content: center;
+//    align-items: center;
+
+//    //order: 0; // indica a ordem que ira aparecer(somente em nos filhos)
+//    //flex-grow: 8; //indica o tamanho em relacao aos outros elementoss(somentos em nos filhos)
+    
+//    //flex-shrink: 0; //indica o quanto ele ira encolher em relacao aos outros elementos(somento em nos filhos)
+//    //flex-basis: 200px; //define o tamanho inicial de um item (somente em nos filhos)
+
+// }

@@ -1,0 +1,23 @@
+div{
+    font-size: 40px;
+    margin: 20px;
+    padding: 20px;
+    background-color: coral;
+    border: solid 5px;
+    display: none;
+}
+
+/* Quando for no maximo 600px */
+@media (max-width: 600px){
+    .muito-pequeno{display: block;}
+}
+
+/* colocando a ',' funciona como ou */
+@media (max-width: 1000px), (orientation:portrait){
+    .pequeno-retrato{display: block;}
+}
+
+/* Colocando 'and' é igual a && */
+@media (min-width: 500px) and (max-width: 1000px){
+    .intervalo{display: block;}
+} 

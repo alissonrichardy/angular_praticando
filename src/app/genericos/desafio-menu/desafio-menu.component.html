@@ -1,0 +1,55 @@
+<nav class="mySideBar" [ngClass]="!menuAtivo? 'disable-menu': ''">
+
+    <img src="https://www.tecnologiafacilsa.com.br/wp-content/uploads/2017/09/PNGPIX-COM-Microsoft-Logo-PNG-Transparent-1.png" alt="">
+
+    <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Registrar</a></li>
+    </ul>
+
+</nav>
+
+<header>
+    <div class="logo">
+        <a href="#inicio">
+            <img src="https://propelenergytech.com/wp-content/uploads/2020/01/microsoft-logo-transparent.png" alt="logo">
+        </a>
+    </div>
+    <button class="menu-toggle" (click)="this.menuAtivo = !this.menuAtivo"> 
+        <i class="fa fa-lg fa-bars"></i>
+    </button>
+
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="#inicio">Início</a>
+            </li>
+            <li>
+                <a href="#cursos">Produtos</a>
+            </li>
+            <li>
+                <a href="#sobre">Sobre</a>
+            </li>
+            <li>
+                <a href="#contato">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <aside class="autenticacao">
+        <a href="#login">Login</a>
+        <a href="#registrar" class="botao destaque">Registrar</a>
+    </aside>
+</header>
+
+
+
+
+
+<script>
+
+</script>

@@ -1,0 +1,20 @@
+<p *ngFor="let x of [1,2,3,4,5]">aaa</p>
+
+<p *ngFor="let x of names">{{x}}</p>
+
+
+
+
+<mat-card>
+    <mat-card-content>
+        <mat-selection-list #list>
+            <mat-list-option *ngFor="let na of names" >  option {{na}} </mat-list-option>
+          </mat-selection-list>
+    </mat-card-content>
+    <mat-card-footer>
+        <p>
+            option selected {{list.selectedOptions.selected.length}}
+        </p>
+    </mat-card-footer>
+</mat-card>
+  
